@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Nikhil Katre — Staff Software Engineer</title>
+<meta name="description" content="Nikhil Katre is a Staff Software Engineer at Walmart Global Tech specializing in large-scale distributed systems, applied AI & ML, and local-first AI." />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Nikhil Katre — Staff Software Engineer" />
+<meta property="og:description" content="Distributed systems, applied AI & ML, and local-first AI. Staff Software Engineer at Walmart Global Tech; Volunteer Judge, 2026 Globee® Awards for Achievement." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Nikhil Katre — Staff Software Engineer" />
+<meta name="twitter:description" content="Distributed systems, applied AI & ML, and local-first AI. Staff Software Engineer at Walmart Global Tech." />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Nikhil Katre","jobTitle":"Staff Software Engineer","worksFor":{"@type":"Organization","name":"Walmart Global Tech"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"North Carolina State University"},{"@type":"CollegeOrUniversity","name":"University of Mumbai"}],"knowsAbout":["Distributed Systems","Apache Kafka","Cassandra","Kubernetes","Apache Spark","TensorFlow","Keras","Local LLMs"],"sameAs":["https://www.linkedin.com/in/rootuser"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f6f7f8;
+    --surface:#ffffff;
+    --surface-2:#f1f4f3;
+    --line:#e2e6e3;
+    --line-strong:#cbd5d1;
+    --ink:#111827;
+    --ink-2:#334155;
+    --muted:#64748b;
+    --accent:#0f4c3a;
+    --accent-2:#146656;
+    --accent-soft:#e6f2ee;
+    --amber:#92400e;
+    --amber-bg:#fef3c7;
+    --radius:16px;
+    --radius-sm:10px;
+    --shadow:0 12px 30px rgba(15,23,42,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0b100e;
+      --bg-soft:#121816;
+      --surface:#151d1a;
+      --surface-2:#1a2420;
+      --line:#26322d;
+      --line-strong:#33453d;
+      --ink:#f1f5f3;
+      --ink-2:#cbd5d1;
+      --muted:#94a8a0;
+      --accent:#5eead4;
+      --accent-2:#2dd4bf;
+      --accent-soft:#132e28;
+      --amber:#fbbf24;
+      --amber-bg:#2a2110;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{animation:none!important; transition:none!important} }
+  body{margin:0; font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; -webkit-font-smoothing:antialiased}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px}
+  /* Nav */
+  .topnav{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+  .topnav-inner{display:flex; align-items:center; justify-content:space-between; height:58px; gap:16px}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:-.02em; color:var(--ink); font-size:15px}
+  .brand-mark{width:32px; height:32px; border-radius:8px; background:var(--accent); color:#fff; display:grid; place-items:center; font-family:"Newsreader",serif; font-weight:700; font-size:15px}
+  @media (prefers-color-scheme: dark){ .brand-mark{color:#06231d} }
+  .navlinks{display:flex; gap:22px; font-size:13.5px; font-weight:500}
+  .navlinks a{color:var(--ink-2)}
+  .navlinks a:hover{color:var(--accent); text-decoration:none}
+  .nav-cta{font-size:13px; font-weight:600; border:1px solid var(--line-strong); padding:7px 12px; border-radius:999px; color:var(--ink)!important}
+  @media (max-width:760px){ .navlinks a:not(.nav-cta){display:none} }
+
+  /* Hero */
+  .hero{padding:56px 0 36px; border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid; grid-template-columns:1.65fr .95fr; gap:36px; align-items:start}
+  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr} .hero{padding-top:36px} }
+  .eyebrow{display:inline-flex; align-items:center; gap:8px; font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); border:1px solid var(--line); padding:6px 10px; border-radius:999px; font-weight:600}
+  .eyebrow i{width:7px; height:7px; border-radius:50%; background:var(--accent-2); display:inline-block}
+  h1{font-family:"Newsreader",serif; font-size:56px; line-height:.95; letter-spacing:-.03em; margin:18px 0 10px; font-weight:700}
+  @media (max-width:560px){ h1{font-size:44px} }
+  .role{font-size:20px; line-height:1.35; font-weight:600; color:var(--ink); margin:0}
+  .role span{color:var(--accent)}
+  .hero-lede{font-size:17px; color:var(--ink-2); margin:16px 0 0; max-width:620px}
+  .hero-meta{display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:18px; font-size:13.5px; color:var(--muted)}
+  .hero-meta b{color:var(--ink-2); font-weight:600}
+  .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+  .btn{display:inline-flex; align-items:center; gap:8px; padding:11px 18px; border-radius:999px; font-weight:600; font-size:14.5px; border:1px solid transparent}
+  .btn-primary{background:var(--accent); color:#fff}
+  @media (prefers-color-scheme: dark){ .btn-primary{color:#052e22} }
+  .btn-primary:hover{text-decoration:none; opacity:.92}
+  .btn-secondary{background:var(--surface); border-color:var(--line-strong); color:var(--ink)}
+  .btn-secondary:hover{text-decoration:none; border-color:var(--accent)}
+  .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:32px; max-width:620px}
+  .stat{border-top:2px solid var(--ink); padding-top:10px}
+  .stat strong{display:block; font-family:"Newsreader",serif; font-size:26px; line-height:1; letter-spacing:-.02em}
+  .stat span{font-size:12.5px; color:var(--muted); line-height:1.3; display:block; margin-top:4px}
+  /* Profile card */
+  .profile-card{background:var(--surface); border:1px solid var(--line); border-radius:20px; overflow:hidden; box-shadow:var(--shadow)}
+  .profile-top{padding:22px 22px 18px; background:var(--bg-soft); border-bottom:1px solid var(--line)}
+  .avatar-row{display:flex; gap:14px; align-items:center}
+  .avatar{width:64px; height:64px; border-radius:16px; background:var(--accent); color:#fff; display:grid; place-items:center; font-family:"Newsreader",serif; font-size:26px; font-weight:700; flex-shrink:0}
+  @media (prefers-color-scheme: dark){ .avatar{color:#052e22} }
+  .avatar-row h3{margin:0; font-size:17px; line-height:1.2}
+  .avatar-row p{margin:3px 0 0; font-size:13px; color:var(--muted)}
+  .focus-list{list-style:none; margin:16px 0 0; padding:0; display:grid; gap:10px}
+  .focus-list li{display:flex; gap:10px; font-size:13.5px; color:var(--ink-2); line-height:1.45}
+  .focus-list li::before{content:""; width:7px; height:7px; margin-top:7px; border-radius:50%; background:var(--accent); flex-shrink:0}
+  .profile-body{padding:18px 22px 22px}
+  .dl{display:grid; grid-template-columns:92px 1fr; gap:8px 12px; font-size:13.5px}
+  .dl dt{color:var(--muted); font-weight:500}
+  .dl dd{margin:0; font-weight:600; color:var(--ink)}
+  .profile-body .note{margin-top:16px; font-size:13px; color:var(--muted); border-top:1px dashed var(--line); padding-top:14px}
+
+  /* Sections */
+  section{padding:52px 0}
+  section + section{border-top:1px solid var(--line)}
+  .section-head{display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:26px}
+  .section-head h2{font-family:"Newsreader",serif; font-size:34px; line-height:1.05; letter-spacing:-.02em; margin:6px 0 0}
+  .kicker{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:600}
+  .section-head p{max-width:520px; color:var(--muted); font-size:15px; margin:0}
+  @media (max-width:700px){ .section-head{flex-direction:column; align-items:start} }
+
+  .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:16px}
+  @media (max-width:900px){ .grid-3{grid-template-columns:1fr} .grid-2{grid-template-columns:1fr} }
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px}
+  .card:hover{border-color:var(--line-strong)}
+  .card-num{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted); letter-spacing:.08em}
+  .card h3{font-size:18px; line-height:1.25; margin:10px 0 8px; letter-spacing:-.01em}
+  .card p{font-size:14.5px; color:var(--ink-2); margin:0}
+  .card ul{margin:14px 0 0; padding:0; list-style:none; display:grid; gap:8px}
+  .card ul li{font-size:13.5px; color:var(--ink-2); padding-left:16px; position:relative; line-height:1.45}
+  .card ul li::before{content:"—"; position:absolute; left:0; color:var(--accent); font-weight:700}
+  .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:16px}
+  .tag{font-size:11.5px; font-weight:600; letter-spacing:.01em; padding:5px 9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); color:var(--ink-2)}
+  .tag-live{background:var(--accent-soft); color:var(--accent); border-color:transparent}
+
+  /* Projects */
+  .project{padding:24px}
+  .project-top{display:flex; justify-content:space-between; gap:12px; align-items:start}
+  .badge{font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:5px 8px; border-radius:999px; white-space:nowrap}
+  .badge-now{background:var(--accent-soft); color:var(--accent)}
+  .badge-core{background:var(--amber-bg); color:var(--amber)}
+  .project h3{font-size:19px; margin:4px 0 8px}
+
+  /* Timeline */
+  .timeline{position:relative; margin-left:6px}
+  .timeline::before{content:""; position:absolute; left:7px; top:8px; bottom:8px; width:1px; background:var(--line-strong)}
+  .t-item{position:relative; padding:0 0 28px 34px}
+  .t-item:last-child{padding-bottom:0}
+  .t-item::before{content:""; position:absolute; left:0; top:6px; width:15px; height:15px; border-radius:50%; background:var(--bg); border:2px solid var(--accent)}
+  .t-item.current::before{background:var(--accent)}
+  .t-meta{display:flex; flex-wrap:wrap; gap:8px; align-items:center; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
+  .t-item h3{margin:6px 0 2px; font-size:17px}
+  .t-item h3 span{color:var(--muted); font-weight:500}
+  .t-item p{margin:6px 0 0; font-size:14.5px; color:var(--ink-2); max-width:720px}
+  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:28px}
+  @media (max-width:700px){ .edu-grid{grid-template-columns:1fr} }
+  .edu{border:1px solid var(--line); border-radius:var(--radius); padding:20px; background:var(--bg-soft)}
+  .edu h3{margin:0 0 4px; font-size:16px}
+  .edu p{margin:0; font-size:14px; color:var(--muted)}
+
+  /* Service */
+  .service-card{display:grid; grid-template-columns:1.2fr .8fr; gap:0; border:1px solid var(--line); border-radius:20px; overflow:hidden; background:var(--surface)}
+  @media (max-width:800px){ .service-card{grid-template-columns:1fr} }
+  .service-main{padding:28px}
+  .service-main h3{font-family:"Newsreader",serif; font-size:26px; margin:8px 0 10px; line-height:1.1}
+  .service-main p{color:var(--ink-2); font-size:15px; margin:0}
+  .service-side{background:var(--accent); color:#fff; padding:28px; display:flex; flex-direction:column; justify-content:center}
+  @media (prefers-color-scheme: dark){ .service-side{color:#052e22} }
+  .service-side strong{font-family:"Newsreader",serif; font-size:28px; line-height:1.1; display:block}
+  .service-side span{font-size:13.5px; opacity:.9; margin-top:6px; display:block; line-height:1.5}
+
+  /* In progress */
+  .wip{border:1px dashed var(--line-strong); border-radius:20px; padding:28px; background:var(--bg-soft); display:grid; grid-template-columns:auto 1fr; gap:20px}
+  @media (max-width:640px){ .wip{grid-template-columns:1fr} }
+  .wip-icon{width:48px; height:48px; border-radius:12px; background:var(--surface); border:1px solid var(--line); display:grid; place-items:center; font-size:22px}
+  .wip h3{margin:0 0 8px; font-size:19px}
+  .wip p{margin:0; color:var(--ink-2); font-size:15px; max-width:720px}
+  .wip-topics{display:flex; flex-wrap:wrap; gap:6px; margin-top:14px}
+
+  /* Skills */
+  .skills-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  @media (max-width:900px){ .skills-grid{grid-template-columns:1fr} }
+  .skill-group h3{font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 12px; font-family:"IBM Plex Mono",monospace; font-weight:600}
+  .chips{display:flex; flex-wrap:wrap; gap:8px}
+  .chip{padding:8px 11px; border-radius:999px; border:1px solid var(--line); background:var(--surface); font-size:13.5px; font-weight:500}
+  .cert-banner{margin-top:18px; border-radius:var(--radius); border:1px solid var(--line); padding:18px 20px; display:flex; justify-content:space-between; gap:16px; align-items:center; background:var(--surface)}
+  @media (max-width:640px){ .cert-banner{flex-direction:column; align-items:start} }
+  .cert-banner strong{font-size:15px}
+  .cert-banner p{margin:2px 0 0; font-size:13.5px; color:var(--muted)}
+
+  /* Contact */
+  .contact{border-radius:20px; background:var(--ink); color:var(--bg); padding:36px; display:grid; grid-template-columns:1.3fr .7fr; gap:28px; align-items:center}
+  @media (prefers-color-scheme: dark){ .contact{background:#e6f2ee; color:#0b100e} }
+  @media (max-width:800px){ .contact{grid-template-columns:1fr; padding:28px} }
+  .contact h2{font-family:"Newsreader",serif; font-size:32px; line-height:1.05; margin:0 0 10px; letter-spacing:-.02em}
+  .contact p{margin:0; opacity:.85; font-size:15px; max-width:520px}
+  .contact-actions{display:flex; flex-direction:column; gap:10px}
+  .contact .btn{justify-content:center}
+  .contact .btn-primary{background:var(--accent); color:#fff}
+  @media (prefers-color-scheme: dark){ .contact .btn-primary{color:#fff; background:#0f4c3a} }
+  .contact .btn-ghost{background:transparent; border-color:color-mix(in srgb, currentColor 30%, transparent); color:inherit}
+  footer{padding:28px 0 40px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+
+  /* Profile links row (hero) */
+  .profile-links{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; align-items:center}
+  .profile-links .pl-label{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; margin-right:2px}
+  .plink{font-size:12.5px; font-weight:600; padding:6px 11px; border-radius:999px; border:1px solid var(--line-strong); color:var(--ink); background:var(--surface)}
+  .plink:hover{border-color:var(--accent); text-decoration:none}
+  .plink-pending{font-size:12.5px; font-weight:500; padding:6px 11px; border-radius:999px; border:1px dashed var(--line-strong); color:var(--muted); background:transparent}
+
+  /* News */
+  .news-list{border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); overflow:hidden}
+  .news-item{display:grid; grid-template-columns:130px 1fr; gap:6px 20px; padding:18px 22px}
+  .news-item + .news-item{border-top:1px solid var(--line)}
+  @media (max-width:640px){ .news-item{grid-template-columns:1fr} }
+  .news-date{font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--accent); font-weight:600; letter-spacing:.04em; padding-top:2px}
+  .news-item h3{margin:0 0 4px; font-size:15.5px}
+  .news-item p{margin:0; font-size:14px; color:var(--ink-2)}
+
+  /* Problem / Approach / Outcome */
+  .pao{display:grid; gap:10px; margin-top:14px}
+  .pao div{display:grid; grid-template-columns:86px 1fr; gap:10px; font-size:13.5px; line-height:1.5}
+  @media (max-width:480px){ .pao div{grid-template-columns:1fr; gap:2px} }
+  .pao dt{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--accent); font-weight:600; padding-top:3px}
+  .pao dd{margin:0; color:var(--ink-2)}
+  .metric-note{margin-top:14px; font-size:12.5px; color:var(--muted); border-top:1px dashed var(--line); padding-top:12px}
+
+  /* Service sub-lists */
+  .service-lists{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:16px}
+  @media (max-width:900px){ .service-lists{grid-template-columns:1fr} }
+  .service-list h3{font-size:13px; letter-spacing:.06em; text-transform:uppercase; font-family:"IBM Plex Mono",monospace; color:var(--muted); margin:0 0 10px; font-weight:600}
+  .service-list ul{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+  .service-list li{font-size:14px; color:var(--ink-2); line-height:1.5}
+  .service-list li b{color:var(--ink)}
+  .status-empty{font-size:13.5px; color:var(--muted); border:1px dashed var(--line-strong); border-radius:var(--radius-sm); padding:12px 14px; line-height:1.5; background:var(--bg-soft)}
+
+  /* Publication format specimen */
+  .pub-format{margin-top:16px; border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; background:var(--surface)}
+  .pub-format h3{margin:0 0 6px; font-size:15.5px}
+  .pub-format p{margin:0; font-size:14px; color:var(--ink-2)}
+  .pub-actions{display:flex; flex-wrap:wrap; gap:6px; margin-top:12px}
+  .pub-btn{font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:600; padding:5px 9px; border-radius:6px; border:1px solid var(--line-strong); color:var(--muted); background:var(--bg-soft)}
+
+  /* Launch plan annex */
+  .annex{border:2px solid var(--ink); border-radius:20px; padding:30px; background:var(--bg-soft)}
+  @media (max-width:640px){ .annex{padding:22px} }
+  .annex-badge{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; background:var(--amber-bg); color:var(--amber); padding:5px 9px; border-radius:999px}
+  .annex h2{font-family:"Newsreader",serif; font-size:30px; line-height:1.08; letter-spacing:-.02em; margin:12px 0 8px}
+  .annex .lede{font-size:15px; color:var(--ink-2); margin:0; max-width:760px}
+  .annex h3{font-size:17px; margin:28px 0 10px; letter-spacing:-.01em}
+  .annex h3:first-of-type{margin-top:24px}
+  .annex p, .annex li{font-size:14.5px; color:var(--ink-2)}
+  .need-box{margin-top:20px; border-radius:var(--radius); background:var(--accent); color:#fff; padding:20px 22px}
+  @media (prefers-color-scheme: dark){ .need-box{color:#052e22} }
+  .need-box strong{font-size:16px; display:block; margin-bottom:6px}
+  .need-box p{color:inherit; opacity:.92; margin:0; font-size:14.5px}
+  .need-box code{background:rgba(255,255,255,.18); padding:1px 6px; border-radius:5px; font-family:"IBM Plex Mono",monospace; font-size:13px}
+  @media (prefers-color-scheme: dark){ .need-box code{background:rgba(5,46,34,.12)} }
+  .tpl-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+  @media (max-width:800px){ .tpl-grid{grid-template-columns:1fr} }
+  .tpl{border:1px solid var(--line); border-radius:var(--radius-sm); padding:16px 18px; background:var(--surface)}
+  .tpl h4{margin:0 0 4px; font-size:15px}
+  .tpl .stars{font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--muted)}
+  .tpl p{margin:8px 0 0; font-size:13.5px}
+  .tpl.pick{border-color:var(--accent); box-shadow:0 0 0 1px var(--accent)}
+  .verdict{font-size:11px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--accent)}
+  .map-rows{border:1px solid var(--line); border-radius:var(--radius-sm); overflow:hidden; background:var(--surface)}
+  .map-row{display:grid; grid-template-columns:230px 1fr 190px; gap:14px; padding:13px 16px; font-size:13.5px; align-items:start}
+  .map-row + .map-row{border-top:1px solid var(--line)}
+  .map-row b{color:var(--ink)}
+  .map-row span{color:var(--ink-2); line-height:1.5}
+  .map-row .st{font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.03em; color:var(--muted); text-transform:uppercase; padding-top:2px}
+  .map-row .st.ok{color:var(--accent)}
+  @media (max-width:800px){ .map-row{grid-template-columns:1fr; gap:4px} }
+  .steps{counter-reset:step; list-style:none; margin:0; padding:0; display:grid; gap:10px}
+  .steps li{display:grid; grid-template-columns:30px 1fr; gap:12px; font-size:14.5px}
+  .steps li::before{counter-increment:step; content:counter(step); width:26px; height:26px; border-radius:50%; background:var(--accent); color:#fff; display:grid; place-items:center; font-size:13px; font-weight:700; margin-top:1px}
+  @media (prefers-color-scheme: dark){ .steps li::before{color:#052e22} }
+  .steps code, .annex p code{font-family:"IBM Plex Mono",monospace; font-size:12.5px; background:var(--surface-2); padding:1px 5px; border-radius:5px}
+  .never-list{margin:0; padding-left:20px; display:grid; gap:7px}
+  .cadence{display:grid; gap:0; border:1px solid var(--line); border-radius:var(--radius-sm); overflow:hidden; background:var(--surface)}
+  .cadence div{display:grid; grid-template-columns:220px 1fr; gap:14px; padding:12px 16px; font-size:13.5px}
+  .cadence div + div{border-top:1px solid var(--line)}
+  .cadence b{color:var(--ink)}
+  .cadence span{color:var(--ink-2); line-height:1.5}
+  @media (max-width:700px){ .cadence div{grid-template-columns:1fr; gap:3px} }
+  .sources{font-size:12.5px; color:var(--muted); margin-top:18px; line-height:1.7}
+</style>
+</head>
+<body>
+<header class="topnav">
+  <div class="wrap topnav-inner">
+    <a class="brand" href="#top" style="text-decoration:none"><span class="brand-mark">NK</span> Nikhil Katre</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#news">News</a>
+      <a href="#focus">Expertise</a>
+      <a href="#work">Contributions</a>
+      <a href="#experience">Experience</a>
+      <a href="#service">Service</a>
+      <a href="#writing">Publications</a>
+      
+      <a class="nav-cta" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><i></i> Staff Software Engineer</span>
+        <h1>Nikhil Katre</h1>
+        <p class="role">Staff Software Engineer at <span>Walmart Global Tech</span> — building complex distributed systems at scale.</p>
+        <p class="hero-lede">15 years across Walmart, SoFi, Yahoo, AppDynamics, and Flipkart. I work on large-scale distributed systems, applied AI &amp; ML systems, and cross-functional technical leadership — and I’m currently exploring local-first AI with on-device LLMs.</p>
+        <div class="hero-meta">
+          <span>🎓 <b>NC State</b> · M.S. Computer Science</span>
+          <span>⚖️ <b>Judge</b> · 2026 Globee® Awards</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+          <a class="btn btn-secondary" href="#experience">View experience ↓</a>
+        </div>
+        <div class="profile-links" aria-label="Author profiles">
+          <span class="pl-label">Profiles</span>
+          <a class="plink" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <span class="plink-pending">Google Scholar — to link at launch</span>
+          <span class="plink-pending">ORCID — to link at launch</span>
+          <span class="plink-pending">GitHub — username pending</span>
+          <span class="plink-pending">CV (PDF) — files/cv.pdf at launch</span>
+        </div>
+        <div class="stats" aria-label="Highlights">
+          <div class="stat"><strong>15 yrs</strong><span>Software engineering across US &amp; India</span></div>
+          <div class="stat"><strong>Staff</strong><span>Current level at Walmart Global Tech since 2022</span></div>
+          <div class="stat"><strong>10+</strong><span>Certifications in AI, deep learning &amp; security</span></div>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="profile-top">
+          <div class="avatar-row">
+            <div class="avatar" aria-hidden="true">NK</div>
+            <div>
+              <h3>At a glance</h3>
+              <p>Distributed Systems · AI/ML · Leadership</p>
+            </div>
+          </div>
+          <ul class="focus-list">
+            <li>Large-scale, high-throughput distributed systems in production</li>
+            <li>Applied ML systems — Spark, TensorFlow / Keras, data pipelines</li>
+            <li>Currently building: local-first AI on private, on-prem hardware</li>
+          </ul>
+        </div>
+        <div class="profile-body">
+          <dl class="dl">
+            <dt>Current</dt><dd>Walmart Global Tech</dd>
+            <dt>Education</dt><dd>NC State · Univ. of Mumbai</dd>
+            <dt>Stack</dt><dd>Java · Go · Python · Kafka</dd>
+          </dl>
+          <p class="note">Focus: complex distributed systems, cross-functional collaboration, and technical leadership.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- EXPERTISE -->
+  <section id="focus">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Research &amp; Expertise Focus</div><h2>Three pillars of my work</h2></div>
+        <p>Modeled on how systems researchers frame their programs — the problems I return to across roles, and where I’m building now.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-num">01 — CORE EXPERTISE</div>
+          <h3>Large-Scale Distributed Systems</h3>
+          <p>Designing and operating complex distributed systems that stay reliable under real-world load — event streaming, storage, and platform engineering.</p>
+          <ul>
+            <li>Event-driven architectures with Kafka &amp; streaming pipelines</li>
+            <li>Distributed data with Cassandra &amp; large-scale Spark jobs</li>
+            <li>Container platforms on Kubernetes</li>
+          </ul>
+          <div class="tags"><span class="tag">Kafka</span><span class="tag">Cassandra</span><span class="tag">Kubernetes</span><span class="tag">Spark</span></div>
+        </article>
+        <article class="card">
+          <div class="card-num">02 — APPLIED SYSTEMS</div>
+          <h3>Applied AI &amp; ML Systems</h3>
+          <p>Bringing ML models into production systems — not just training them, but serving, scaling, and operating them alongside core product infrastructure.</p>
+          <ul>
+            <li>ML models with TensorFlow / Keras &amp; Python</li>
+            <li>Feature &amp; data pipelines with Spark / PySpark</li>
+            <li>Cross-functional delivery with product &amp; data teams</li>
+          </ul>
+          <div class="tags"><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">PySpark</span><span class="tag">Python</span></div>
+        </article>
+        <article class="card">
+          <div class="card-num">03 — CURRENT FOCUS · BUILDING</div>
+          <h3>Local-First &amp; Edge AI</h3>
+          <p>Exploring what capable AI looks like when it runs locally — private by default, on your own hardware, without sending personal data to the cloud.</p>
+          <ul>
+            <li>Locally-installed LLMs for everyday workflows</li>
+            <li>On-prem / NAS home lab for photos &amp; videos</li>
+            <li>Private, on-device experimentation &amp; prototyping</li>
+          </ul>
+          <div class="tags"><span class="tag tag-live">● Building now</span><span class="tag">Local LLMs</span><span class="tag">On-Prem AI</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">News &amp; Updates</div><h2>Latest, dated</h2></div>
+        <p>Every item here is dated and documentable. New judging roles, papers, talks, and releases are added the week they happen — and only after they are completed, not merely invited.</p>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-date">2026</div>
+          <div>
+            <h3>Volunteer Judge — 2026 Globee® Awards for Achievement</h3>
+            <p>Serving as a Volunteer Judge for the 2026 Globee® Awards for Achievement (GlobeeAwards.com). Certificate of appreciation on file. Listed under <a href="#service">Professional Service</a>.</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-date">2026 · Ongoing</div>
+          <div>
+            <h3>Building: local-first AI on private, on-prem hardware</h3>
+            <p>Active personal lab work — software powered by locally-installed LLMs, running on a home NAS setup for photos and videos. See <a href="#work">Original Contributions</a>.</p>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-date">Sep 2022</div>
+          <div>
+            <h3>Staff Software Engineer — Walmart Global Tech</h3>
+            <p>Current role: complex distributed systems, cross-functional collaboration, and technical leadership.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGINAL CONTRIBUTIONS -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Original Contributions · Projects &amp; Open Source</div><h2>Selected work &amp; what I’m building</h2></div>
+        <p>Each project is framed the way strong industry author sites frame it — Problem / Approach / Outcome. Impact is stated as facts; any metric added later will carry its source link and an “as of” date.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card project">
+          <div class="project-top"><div class="card-num">WALMART GLOBAL TECH</div><span class="badge badge-core">Core Role</span></div>
+          <h3>Distributed Systems at Retail Scale</h3>
+          <dl class="pao">
+            <div><dt>Problem</dt><dd>Complex distributed systems that must stay reliable at national retail scale.</dd></div>
+            <div><dt>Approach</dt><dd>Staff-level platform engineering and technical leadership since Sep 2022, working cross-functionally.</dd></div>
+            <div><dt>Outcome</dt><dd>Ongoing Staff role at Walmart Global Tech — scope and role as listed on LinkedIn. Employer-confidential details are not published here.</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">Java / Kotlin</span><span class="tag">Go</span><span class="tag">Kafka</span><span class="tag">Kubernetes</span></div>
+        </article>
+        <article class="card project">
+          <div class="project-top"><div class="card-num">PERSONAL LAB</div><span class="badge badge-now">Building Now</span></div>
+          <h3>Local-First AI with Local LLMs</h3>
+          <dl class="pao">
+            <div><dt>Problem</dt><dd>Useful AI assistance usually means sending personal data to someone else’s cloud.</dd></div>
+            <div><dt>Approach</dt><dd>Software powered by locally-installed LLMs, tested against everyday productivity and media workflows.</dd></div>
+            <div><dt>Outcome</dt><dd>Active prototyping. Repositories will be linked here — with dated stars / dependents / downloads — once they are public.</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">Local LLMs</span><span class="tag">On-Device Inference</span><span class="tag">Privacy-First</span></div>
+        </article>
+        <article class="card project">
+          <div class="project-top"><div class="card-num">HOME LAB · INFRASTRUCTURE</div><span class="badge badge-now">Building Now</span></div>
+          <h3>NAS &amp; On-Prem Media Lab</h3>
+          <dl class="pao">
+            <div><dt>Problem</dt><dd>Family photos and videos need local storage and local compute, under my own control.</dd></div>
+            <div><dt>Approach</dt><dd>A home NAS setup that doubles as an on-prem AI testbed — local storage, local compute.</dd></div>
+            <div><dt>Outcome</dt><dd>Running home lab; the natural foundation for the edge-AI experiments above.</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">NAS</span><span class="tag">Home Lab</span><span class="tag">Edge AI</span></div>
+        </article>
+        <article class="card project">
+          <div class="project-top"><div class="card-num">FINTECH · OBSERVABILITY · MEDIA</div><span class="badge badge-core">Prior Roles</span></div>
+          <h3>Platforms Across SoFi, Yahoo &amp; AppDynamics</h3>
+          <dl class="pao">
+            <div><dt>Problem</dt><dd>Backend and platform systems across fintech, media, and observability — each at production scale.</dd></div>
+            <div><dt>Approach</dt><dd>Staff at SoFi (2021–22), Senior at Yahoo (2019–21), Senior at AppDynamics (2015–19).</dd></div>
+            <div><dt>Outcome</dt><dd>A decade of platform engineering before Walmart, preceded by early roles at Flipkart, Durham Public Schools, and NC State.</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">SoFi</span><span class="tag">Yahoo</span><span class="tag">AppDynamics</span><span class="tag">Flipkart</span></div>
+        </article>
+      </div>
+      <p class="metric-note" style="max-width:820px">Patents: none are claimed on this page. If a patent is added, it will show its number, status (granted vs. pending — never blurred), assignee, and a Google Patents link, plus evidence of use — a patent alone does not establish significance.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Experience &amp; Education</div><h2>15 years, five chapters</h2></div>
+        <p>From early engineering roles in 2011 to Staff-level leadership today — titles and dates as listed on LinkedIn.</p>
+      </div>
+      <div class="timeline">
+        <div class="t-item current">
+          <div class="t-meta"><span>Sep 2022 — Present</span></div>
+          <h3>Staff Software Engineer <span>— Walmart Global Tech</span></h3>
+          <p>Current role. Focus on complex distributed systems, cross-functional collaboration, and technical leadership.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-meta"><span>Mar 2021 — Sep 2022</span></div>
+          <h3>Staff Software Engineer <span>— SoFi</span></h3>
+          <p>Staff-level engineering in fintech, following the move from infrastructure / observability into consumer financial platforms.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-meta"><span>Oct 2019 — Oct 2021</span></div>
+          <h3>Senior Software Engineer <span>— Yahoo</span></h3>
+          <p>Senior engineering role.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-meta"><span>Oct 2015 — Oct 2019</span></div>
+          <h3>Senior Software Engineer <span>— AppDynamics</span></h3>
+          <p>Senior engineering role held for four years — the longest chapter before Walmart.</p>
+        </div>
+        <div class="t-item">
+          <div class="t-meta"><span>2011 — 2015</span></div>
+          <h3>Software Engineer <span>— Flipkart · Durham Public Schools · NC State</span></h3>
+          <p>Early-career engineering roles across e-commerce, public-sector, and university settings in India and North Carolina.</p>
+        </div>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu">
+          <div class="kicker" style="margin-bottom:8px">Graduate</div>
+          <h3>M.S., Computer Science</h3>
+          <p>North Carolina State University — Raleigh, NC</p>
+        </div>
+        <div class="edu">
+          <div class="kicker" style="margin-bottom:8px">Undergraduate</div>
+          <h3>B.E., Computer Engineering</h3>
+          <p>University of Mumbai — Mumbai, India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE -->
+  <section id="service">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Professional Service &amp; Engagement</div><h2>Judging &amp; community</h2></div>
+        <p>Peer review and judging are how senior engineers give back — and how the field vets its best work.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-main">
+          <div class="kicker">Verified Recognition</div>
+          <h3>Volunteer Judge — 2026 Globee® Awards for Achievement</h3>
+          <p>Volunteer Judge in the 2026 Globee® Awards for Achievement (GlobeeAwards.com).</p>
+          <div class="tags" style="margin-top:16px"><span class="tag">Globee® Awards</span><span class="tag">2026</span><span class="tag">Technology Judging</span></div>
+        </div>
+        <div class="service-side">
+          <strong>2026<br>Globee® Awards</strong>
+          <span>Volunteer Judge — Awards for Achievement. Professional service will be updated here as further confirmed engagements are completed.</span>
+        </div>
+      </div>
+
+      <div class="service-lists">
+        <div class="card service-list">
+          <h3>Programme Committees</h3>
+          <p class="status-empty">No programme-committee roles yet. A role will be listed here only once it is confirmed — venue, role, and year, linked to the programme page that names me.</p>
+        </div>
+        <div class="card service-list">
+          <h3>Journal &amp; Conference Reviewing</h3>
+          <p class="status-empty">No reviewing roles listed yet. Reviewing is recorded only after a review is completed — an invitation alone is not listed, and internal code review or mentoring never counts as judging.</p>
+        </div>
+        <div class="card service-list">
+          <h3>Award &amp; Competition Judging</h3>
+          <ul>
+            <li><b>2026 Globee® Awards for Achievement</b> — Volunteer Judge (GlobeeAwards.com). Certificate of appreciation on file.</li>
+          </ul>
+          <p class="status-empty" style="margin-top:10px">Applications and outreach in progress are not listed as roles. Only completed judging appears here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS IN PROGRESS -->
+  <section id="writing">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Publications &amp; Writing</div><h2>Research in development</h2></div>
+      </div>
+      <div class="wip">
+        <div class="wip-icon" aria-hidden="true">✎</div>
+        <div>
+          <h3>Scholarly Articles — In Progress</h3>
+          <p>Nikhil is developing research writing drawing on 15 years of distributed-systems practice and his current work in local-first AI. No papers are listed here until they are published or publicly posted — this section will be updated with full citations and links at that point. A Google Scholar profile link and a dated citation total (“as of” a stated date) will be added at the head of this section once the profile is public.</p>
+          <div class="wip-topics">
+            <span class="tag">Distributed Systems Reliability</span>
+            <span class="tag">Local-First AI Systems</span>
+            <span class="tag">Applied ML in Production</span>
+            <span class="tag">Edge Inference</span>
+          </div>
+        </div>
+      </div>
+      <div class="pub-format" aria-label="How each publication will be listed">
+        <h3>How each paper will be listed — the format used by strong author sites</h3>
+        <p>Venue badge + year · full author list with my name in bold · acceptance rate where the venue publishes one · award badge on the paper itself if it wins one. Every entry links the publisher’s page — the list is the authorship record only if each item is one click from its primary source. Blog posts and self-published pieces will sit in a separate <b>Writing</b> list, never mixed into scholarly articles.</p>
+        <div class="pub-actions" aria-hidden="true"><span class="pub-btn">[ PDF ]</span><span class="pub-btn">[ BibTeX ]</span><span class="pub-btn">[ DOI ]</span><span class="pub-btn">[ Code ]</span><span class="pub-btn">[ Slides / Video ]</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TALKS -->
+  <section id="talks">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Invited Talks &amp; Presentations</div><h2>Talks</h2></div>
+        <p>A talk is listed only with its event, organiser, and date — and marked “invited” or “keynote” only when the organiser actually invited it, with a link to the programme page.</p>
+      </div>
+      <div class="wip">
+        <div class="wip-icon" aria-hidden="true">🎤</div>
+        <div>
+          <h3>No invited talks listed yet</h3>
+          <p>Speaking topics drawn from current work: large-scale distributed systems reliability, applied ML in production, and local-first / edge AI. When a talk is given, it will appear here with the programme link and slides or video.</p>
+          <div class="wip-topics">
+            <span class="tag">Distributed Systems Reliability</span>
+            <span class="tag">Applied ML in Production</span>
+            <span class="tag">Local-First AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="kicker">Skills &amp; Certifications</div><h2>Technical toolkit</h2></div>
+        <p>Languages, platforms, and ML stack as listed on LinkedIn.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="card skill-group">
+          <h3>Languages</h3>
+          <div class="chips"><span class="chip">Java</span><span class="chip">Kotlin</span><span class="chip">Go</span><span class="chip">Python</span></div>
+        </div>
+        <div class="card skill-group">
+          <h3>Data &amp; Platforms</h3>
+          <div class="chips"><span class="chip">Kafka</span><span class="chip">Cassandra</span><span class="chip">Kubernetes</span><span class="chip">Spark / PySpark</span></div>
+        </div>
+        <div class="card skill-group">
+          <h3>AI / ML</h3>
+          <div class="chips"><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">ML Models</span><span class="chip">Local LLMs</span></div>
+        </div>
+      </div>
+      <div class="cert-banner">
+        <div><strong>10+ Certifications</strong><p>Across artificial intelligence, deep learning, and Cisco security — as listed on LinkedIn.</p></div>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener" style="white-space:nowrap">See full list on LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section style="padding-top:8px">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Let’s connect.</h2>
+          <p>Best way to reach me, see my full history, or follow my work in distributed systems and AI is on LinkedIn.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">linkedin.com/in/rootuser ↗</a>
+          <a class="btn btn-ghost" href="#top">Back to top ↑</a>
+        </div>
+      </div>
+      <footer>
+        <span>© 2026 Nikhil Katre</span>
+        <span>Staff Software Engineer, Walmart Global Tech · M.S., NC State · Custom HTML — ready for GitHub Pages</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+
+</body>
+</html>
