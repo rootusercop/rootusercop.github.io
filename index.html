@@ -9,10 +9,16 @@
 <meta name="description" content="Nikhil Katre is a Staff Software Engineer at Walmart Global Tech specializing in large-scale distributed systems, applied AI & ML, and local-first AI." />
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Nikhil Katre — Staff Software Engineer" />
-<meta property="og:description" content="Distributed systems, applied AI & ML, and local-first AI. Staff Software Engineer at Walmart Global Tech; Volunteer Judge, 2026 Globee® Awards for Achievement." />
+<meta property="og:description" content="Distributed systems, applied AI & ML, and local-first AI. Staff Software Engineer at Walmart Global Tech." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Nikhil Katre — Staff Software Engineer" />
 <meta name="twitter:description" content="Distributed systems, applied AI & ML, and local-first AI. Staff Software Engineer at Walmart Global Tech." />
+<!-- FEATURE FLAGS: set a flag to true to show that content again. While false, every element
+     tagged with the matching data-flag attribute is hidden everywhere on the page. -->
+<script>
+window.SITE_FLAGS = { awards: false, scholar: false };
+(function(){var css=Object.keys(window.SITE_FLAGS).filter(function(k){return !window.SITE_FLAGS[k];}).map(function(k){return '[data-flag="'+k+'"]{display:none!important}';}).join('');if(css){var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);}})();
+</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Nikhil Katre","jobTitle":"Staff Software Engineer","worksFor":{"@type":"Organization","name":"Walmart Global Tech"},"alumniOf":[{"@type":"CollegeOrUniversity","name":"North Carolina State University"},{"@type":"CollegeOrUniversity","name":"University of Mumbai"}],"knowsAbout":["Distributed Systems","Apache Kafka","Cassandra","Kubernetes","Apache Spark","TensorFlow","Keras","Local LLMs"],"sameAs":["https://www.linkedin.com/in/rootuser"]}
 </script>
@@ -324,7 +330,7 @@
         <p class="hero-lede">15 years across Walmart, SoFi, Yahoo, AppDynamics, and Flipkart. I work on large-scale distributed systems, applied AI &amp; ML systems, and cross-functional technical leadership — and I’m currently exploring local-first AI with on-device LLMs.</p>
         <div class="hero-meta">
           <span>🎓 <b>NC State</b> · M.S. Computer Science</span>
-          <span>⚖️ <b>Judge</b> · 2026 Globee® Awards</span>
+          <span data-flag="awards">⚖️ <b>Judge</b> · 2026 Globee® Awards</span>
         </div>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
@@ -333,7 +339,7 @@
         <div class="profile-links" aria-label="Author profiles">
           <span class="pl-label">Profiles</span>
           <a class="plink" href="https://www.linkedin.com/in/rootuser" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <span class="plink-pending">Google Scholar — to link at launch</span>
+          <span class="plink-pending" data-flag="scholar">Google Scholar — to link at launch</span>
           <span class="plink-pending">ORCID — to link at launch</span>
           <span class="plink-pending">GitHub — username pending</span>
           <span class="plink-pending">CV (PDF) — files/cv.pdf at launch</span>
@@ -425,7 +431,7 @@
         <p>Every item here is dated and documentable. New judging roles, papers, talks, and releases are added the week they happen — and only after they are completed, not merely invited.</p>
       </div>
       <div class="news-list">
-        <article class="news-item">
+        <article class="news-item" data-flag="awards">
           <div class="news-date">2026</div>
           <div>
             <h3>Volunteer Judge — 2026 Globee® Awards for Achievement</h3>
@@ -560,7 +566,7 @@
         <div><div class="kicker">Professional Service &amp; Engagement</div><h2>Judging &amp; community</h2></div>
         <p>Peer review and judging are how senior engineers give back — and how the field vets its best work.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" data-flag="awards">
         <div class="service-main">
           <div class="kicker">Verified Recognition</div>
           <h3>Volunteer Judge — 2026 Globee® Awards for Achievement</h3>
@@ -582,7 +588,7 @@
           <h3>Journal &amp; Conference Reviewing</h3>
           <p class="status-empty">No reviewing roles listed yet. Reviewing is recorded only after a review is completed — an invitation alone is not listed, and internal code review or mentoring never counts as judging.</p>
         </div>
-        <div class="card service-list">
+        <div class="card service-list" data-flag="awards">
           <h3>Award &amp; Competition Judging</h3>
           <ul>
             <li><b>2026 Globee® Awards for Achievement</b> — Volunteer Judge (GlobeeAwards.com). Certificate of appreciation on file.</li>
